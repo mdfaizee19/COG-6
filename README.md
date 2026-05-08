@@ -4,7 +4,7 @@
 
 COG-6 is a cognitive-inspired long-context In-Context Learning (ICL) framework designed for ultra-long document annotation using the FlagOS ecosystem.
 
-Built for the FlagOS Open Computing Global Challenge — Track 3, COG-6 focuses on improving annotation robustness, contextual persistence, and multi-stage reasoning for large-scale long-context workloads.
+Built for the FlagOS Open Computing Global Challenge — Track 3, COG-6 focuses on improving annotation robustness, contextual persistence, and multi-stage reasoning for large-scale long-context work.
 
 ---
 
@@ -417,7 +417,7 @@ COG-6 is built for the FlagOS Open Computing Global Challenge — Track 3.
 
 The official Track 3 dataset and benchmark pipeline are provided through the OpenSeek repository:
 
-* urlOpenSeek Track 3 Repository[https://github.com/FlagAI-Open/OpenSeek/tree/main/openseek/competition/LongContext-ICL-Annotation](https://github.com/FlagAI-Open/OpenSeek/tree/main/openseek/competition/LongContext-ICL-Annotation)
+* [OpenSeek Track 3 Repository](https://github.com/FlagAI-Open/OpenSeek/tree/main/openseek/competition/LongContext-ICL-Annotation)
 
 The repository includes:
 
@@ -433,7 +433,7 @@ The repository includes:
 
 Track 3 submissions are restricted to the official competition model:
 
-* urlQwen3-4B on Hugging Face[https://huggingface.co/Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
+* [Qwen3-4B on Hugging Face](https://huggingface.co/Qwen/Qwen3-4B)
 
 No fine-tuning or external datasets are allowed under the competition rules.
 
@@ -461,6 +461,6 @@ This enables COG-6 to demonstrate advanced long-context reasoning workloads oper
 
 # Conclusion
 
-COG-6 is a cognitive-inspired orchestration framework designed to improve long-context annotation through hierarchical memory construction, saliency-aware context organization, adaptive ICL retrieval, and multi-step reasoning.
+COG-6 is a cognitive-inspired orchestration framework designed to improve long-context annotation through hierarchical memory construction, saliency-aware context organization, adaptive ICL retrieval, and multi-stage reasoning validation.
 
 By running entirely on the FlagOS ecosystem, COG-6 demonstrates how advanced long-context reasoning systems can be efficiently orchestrated using FlagScale and Qwen3-4B.
