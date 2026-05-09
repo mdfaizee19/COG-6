@@ -1,87 +1,102 @@
 # COG-6
-
-## Cognitive Orchestration Framework for Long-Context Annotation
-
-COG-6 is a cognitive-inspired long-context In-Context Learning (ICL) framework designed for ultra-long document annotation using the FlagOS ecosystem.
-
-Built for the FlagOS Open Computing Global Challenge — Track 3, COG-6 focuses on improving annotation robustness, contextual persistence, and multi-stage reasoning for large-scale long-context work.
-
 <img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/9f619b7a-bf24-49b3-915d-062d4ea700e4" />
 
+## Persistent Cognitive Memory Runtime for Long-Context ICL Reasoning
+
+COG-6 is a cognitive-inspired long-context In-Context Learning (ICL) framework designed to mitigate contextual degradation through persistent structured memory orchestration.
+
+Built for the FlagOS Open Computing Global Challenge — Track 3, COG-6 demonstrates how advanced long-context reasoning systems can operate on top of the FlagOS ecosystem using:
+
+* FlagScale
+* Qwen3-4B
+* Persistent Cognitive Memory Runtime
+* Multi-Stage ICL Orchestration
+
+Unlike traditional long-context prompting systems that suffer from attention dilution and contextual forgetting, COG-6 introduces a hierarchical cognitive memory layer that preserves critical reasoning state across ultra-long inference workflows.
+
+---
+
+# Core Problem
+
+Modern long-context LLM pipelines suffer from several major limitations:
+
+* Contextual degradation over long sequences
+* Attention dilution
+* Weak example organization
+* Flat memory representation
+* Inconsistent annotation reasoning
+* Loss of earlier contextual information
+
+Traditional ICL pipelines treat all context equally.
+
+As sequence length grows, important information weakens and reasoning quality deteriorates.
+
+COG-6 addresses this problem through:
+
+* Persistent cognitive memory
+* Structured contextual hierarchy
+* Multi-stage reasoning orchestration
+* Adaptive ICL retrieval
+* Reflective validation
 
 ---
 
 # Core Idea
 
-Traditional ICL pipelines degrade in ultra-long context settings due to:
+COG-6 introduces a hybrid cognitive memory and annotation orchestration framework where long-context information is transformed into persistent structured cognitive memory before inference.
 
-* Attention dilution
-* Context overload
-* Loss of earlier information
-* Weak example organization
-* Inconsistent reasoning
+Instead of repeatedly forcing the model to process massive raw context windows directly, COG-6:
 
-COG-6 introduces a hierarchical cognitive orchestration pipeline that mimics how humans process long information:
+1. Extracts cognitive events
+2. Encodes structured memory states
+3. Prioritizes contextual importance
+4. Retrieves relevant reasoning examples
+5. Injects persistent memory into staged ICL reasoning
+6. Validates reasoning consistency through reflective inference
 
-* Segmenting information into meaningful units
-* Filtering important details
-* Maintaining evolving memory
-* Recalling relevant prior examples
-* Reasoning step-by-step
-* Reflecting and validating outputs
-
-Instead of relying on model fine-tuning, COG-6 improves reasoning quality through intelligent context organization and inference orchestration.
+This enables the framework to maintain persistent contextual understanding across long reasoning workflows.
 
 ---
 
-# Project Vision
-
-COG-6 demonstrates how the FlagOS ecosystem can support advanced long-context reasoning workloads through memory-aware ICL orchestration.
-
-The framework is designed to:
-
-* Improve annotation consistency
-* Preserve contextual understanding across ultra-long sequences
-* Showcase complex multi-stage inference pipelines on FlagScale
-* Demonstrate production-grade reasoning workflows on FlagOS
-
----
-
-# COG-6 Architecture
+# System Architecture
 
 ```text
-Dataset
+Long Context Input
 ↓
-Semantic Chunking
+Cognitive Event Extraction
 ↓
-Saliency Filtering
+Structured Cognitive Memory Encoding
 ↓
-Hierarchical Memory Construction
+Hierarchical Memory Runtime
 ↓
-Associative Example Retrieval
+Importance Prioritization
+↓
+Associative ICL Retrieval
+↓
+Persistent Context Injection
 ↓
 Multi-Step Cognitive Reasoning
 ↓
 Reflective Validation
 ↓
-Structured Annotation Output
+Structured Annotation
+↓
+FlagScale Execution
+↓
+Qwen3-4B
+↓
+FlagOS Runtime
 ```
 
 ---
 
-# The 6 Cognitive Pillars
+# The COG-6 Cognitive Pillars
 
 ## 1. Semantic Chunking
 
-### Purpose
+Break ultra-long documents into semantically meaningful reasoning units.
 
-Break ultra-long documents into semantically meaningful cognitive units.
-
-### Why It Matters
-
-Large language models struggle with context overload when processing extremely long sequences.
-
-COG-6 organizes documents into structured sections rather than naive token splits.
+Instead of naive token splitting, COG-6 partitions context into structured cognitive sections.
 
 ### Example
 
@@ -91,189 +106,166 @@ Chunk 2 → Refund Escalation
 Chunk 3 → Customer Sentiment
 ```
 
-### Contribution to FlagOS
+### Contribution
 
-Demonstrates scalable long-context orchestration workloads running on the FlagOS ecosystem.
+* Reduces attention dilution
+* Improves long-context organization
+* Enables scalable staged inference workloads on FlagOS
 
 ---
 
 ## 2. Saliency Filtering
 
-### Purpose
-
-Identify and preserve high-signal information while filtering repetitive or low-value context.
-
-### Why It Matters
-
-Ultra-long documents often contain:
-
-* Noise
-* Repetition
-* Irrelevant conversational details
-
-COG-6 extracts the most informative reasoning signals before inference.
+Extract high-signal information while suppressing repetitive or low-value context.
 
 ### Example
 
 Ignored:
 
 ```text
-"Please help please help please help"
+"please help please help"
 ```
 
 Preserved:
 
 ```text
-"Refund pending for 21 days"
+"refund unresolved for 21 days"
 ```
 
-### Contribution to FlagOS
+### Contribution
 
-Improves context efficiency and reduces unnecessary inference workload complexity.
+* Improves context efficiency
+* Preserves critical reasoning signals
+* Reduces inference noise
 
 ---
 
-## 3. Hierarchical Memory Construction
+## 3. Hierarchical Memory Runtime
 
-### Purpose
+Maintain persistent evolving memory representations across reasoning stages.
 
-Maintain evolving global contextual understanding across multiple reasoning stages.
-
-### Why It Matters
-
-Long-context inference often suffers from contextual degradation where earlier information becomes weak or forgotten.
-
-COG-6 builds persistent memory representations to preserve critical reasoning state.
+Instead of repeatedly processing raw context, COG-6 constructs compressed cognitive memory states.
 
 ### Example
 
 ```json
 {
-  "main_issue": "delivery_delay",
+  "main_issue": "refund_delay",
   "urgency": "high",
   "sentiment": "negative"
 }
 ```
 
-### Contribution to FlagOS
+### Contribution
 
-Demonstrates persistent multi-stage reasoning workflows operating on FlagScale infrastructure.
+* Mitigates contextual degradation
+* Preserves earlier information
+* Enables persistent reasoning workflows
 
 ---
 
-## 4. Associative Retrieval
+## 4. Associative ICL Retrieval
 
-### Purpose
+Dynamically retrieve contextually relevant annotation examples.
 
-Dynamically retrieve contextually relevant ICL examples.
+Traditional prompting uses static examples.
 
-### Why It Matters
-
-Static prompting weakens reasoning quality.
-
-COG-6 retrieves demonstrations that align with the current reasoning state.
+COG-6 performs adaptive memory-aware retrieval.
 
 ### Example
 
-Input:
-
 ```text
-Late delivery complaint
+Late refund complaint
+↓
+Retrieve refund-related annotation demonstrations
 ```
 
-Retrieved Examples:
+### Contribution
 
-```text
-"Package delayed for 2 weeks" → Delivery Issue
-```
-
-### Contribution to FlagOS
-
-Demonstrates adaptive context-aware inference orchestration.
+* Improves annotation alignment
+* Enables adaptive context-aware inference
+* Strengthens long-context ICL quality
 
 ---
 
 ## 5. Cognitive Reasoning
 
-### Purpose
-
-Perform staged multi-step annotation reasoning.
-
-### Why It Matters
-
-Single-step inference pipelines are often shallow and unstable.
-
-COG-6 decomposes reasoning into structured cognitive stages.
+Transform single-step prompting into staged reasoning orchestration.
 
 ### Pipeline
 
 ```text
 Extract Facts
 ↓
-Interpret Meaning
+Interpret Context
 ↓
 Generate Annotation
 ```
 
-### Contribution to FlagOS
+### Contribution
 
-Showcases advanced chained reasoning workloads running on the FlagScale runtime.
+* Improves reasoning stability
+* Enables interpretable annotation generation
+* Demonstrates chained reasoning workflows on FlagScale
 
 ---
 
 ## 6. Reflective Validation
 
-### Purpose
-
-Perform self-consistency validation and output stabilization.
-
-### Why It Matters
-
-LLM outputs are probabilistic and may become inconsistent.
-
-COG-6 introduces reflective validation to improve robustness.
+Perform iterative self-consistency validation through multiple inference passes.
 
 ### Example
 
 ```text
-Run 1 → Negative
-Run 2 → Negative
-Run 3 → Neutral
+Run 1 → Refund Delay
+Run 2 → Refund Delay
+Run 3 → Payment Issue
 ```
 
 Final Consensus:
 
 ```text
-Negative
+Refund Delay
 ```
 
-### Contribution to FlagOS
+### Contribution
 
-Demonstrates reliable production-grade iterative inference workflows.
+* Stabilizes probabilistic outputs
+* Improves annotation robustness
+* Demonstrates production-grade reasoning workflows
 
 ---
 
-# Long-Context ICL Workflow
+# Cognitive Memory Runtime
 
-```text
-Raw Long Document
-↓
-Semantic Chunking
-↓
-Saliency Extraction
-↓
-Global Memory Update
-↓
-Dynamic Example Retrieval
-↓
-ICL Prompt Construction
-↓
-Multi-Step Reasoning
-↓
-Reflective Validation
-↓
-Structured Annotation
-```
+The central innovation of COG-6 is the Cognitive Memory Runtime.
+
+Unlike standard vector-only memory systems, COG-6 stores memory as structured cognitive objects.
+
+Each memory contains:
+
+* Memory Type
+* Importance Score
+* Confidence Score
+* Temporal Context
+* Trigger Source
+* Persistent Reasoning State
+
+---
+
+# Cognitive Memory Classes
+
+COG-6 organizes memory into structured cognitive categories.
+
+| Memory Class | Purpose                        |
+| ------------ | ------------------------------ |
+| Preferences  | Behavioral context             |
+| Constraints  | Hard reasoning boundaries      |
+| Goals        | Long-term intent               |
+| Commitments  | Active obligations             |
+| Identities   | Persistent contextual identity |
+
+This enables reasoning-aware contextual prioritization instead of flat retrieval.
 
 ---
 
@@ -281,102 +273,184 @@ Structured Annotation
 
 COG-6 does not replace In-Context Learning.
 
-Instead, it enhances ICL through:
+Instead, it extends ICL through:
 
-* Hierarchical context organization
-* Persistent memory-aware reasoning
-* Dynamic example retrieval
-* Multi-stage cognitive orchestration
-* Self-consistency validation
+* Persistent memory orchestration
+* Structured context hierarchy
+* Dynamic associative retrieval
+* Multi-stage reasoning
+* Reflective validation
 
-COG-6 transforms standard prompting into a structured long-context reasoning framework.
+Traditional ICL:
+
+```text
+Context
+↓
+Prompt
+↓
+LLM
+```
+
+COG-6:
+
+```text
+Context
+↓
+Cognitive Memory Runtime
+↓
+Adaptive ICL Orchestration
+↓
+Persistent Reasoning
+↓
+Structured Annotation
+```
 
 ---
 
 # FlagOS Ecosystem Integration
 
-COG-6 runs entirely on top of the FlagOS ecosystem.
+COG-6 operates entirely on top of the FlagOS ecosystem.
 
-## Stack
+## Infrastructure Stack
 
 ```text
-COG-6 Framework
+COG-6
 ↓
-FlagScale Runtime
+FlagScale
 ↓
 Qwen3-4B
 ↓
-FlagOS Infrastructure
+FlagOS Runtime
 ↓
 Hardware
 ```
 
 ---
 
-# How COG-6 Uses FlagOS
+# Role of FlagScale
 
-COG-6 performs:
+FlagScale acts as the inference execution and orchestration layer for all reasoning workloads inside COG-6.
 
-* Long-context orchestration
-* Multi-stage reasoning
-* Iterative inference
-* Memory-aware annotation
-* Validation loops
+Every stage of the framework:
 
-All inference execution is handled through:
+* memory extraction
+* retrieval reasoning
+* annotation generation
+* reflective validation
 
-* FlagScale
-* Qwen3-4B
-* FlagOS runtime infrastructure
+runs through the FlagScale execution framework.
 
-This demonstrates how the FlagOS ecosystem can support advanced cognitive-style annotation workloads.
+This enables COG-6 to demonstrate advanced cognitive reasoning workloads on the FlagOS infrastructure.
 
 ---
 
-# Example End-to-End Workflow
+# Official Competition Resources
+
+## OpenSeek Benchmark Repository
+
+The official Track 3 dataset and benchmark pipeline are provided through:
+
+[https://github.com/FlagAI-Open/OpenSeek/tree/main/openseek/competition/LongContext-ICL-Annotation](https://github.com/FlagAI-Open/OpenSeek/tree/main/openseek/competition/LongContext-ICL-Annotation)
+
+---
+
+## Official Competition Model
+
+Track 3 submissions are restricted to:
+
+Qwen3-4B
+
+[https://huggingface.co/Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
+
+---
+
+# Example Workflow
 
 ## Input
 
 ```text
-5000-word customer support conversation
+7000-word customer support conversation
 ```
 
-## COG-6 Processing
+---
+
+## Without COG-6
 
 ```text
-1. Split document into semantic chunks
-2. Extract salient information
-3. Build evolving global memory
-4. Retrieve relevant annotation examples
-5. Perform staged reasoning
-6. Validate consistency
-7. Generate final annotation
+Long Context
+↓
+Flat Prompting
+↓
+FlagScale
+↓
+Qwen3-4B
+↓
+Weak / Inconsistent Annotation
 ```
 
-## Final Output
+Problems:
+
+* Earlier information weakens
+* Important details forgotten
+* Inconsistent reasoning
+* Attention dilution
+
+---
+
+## With COG-6
+
+```text
+Long Context
+↓
+Cognitive Event Extraction
+↓
+Structured Memory Encoding
+↓
+Persistent Memory Runtime
+↓
+Associative ICL Retrieval
+↓
+Multi-Step Reasoning
+↓
+Reflective Validation
+↓
+FlagScale
+↓
+Qwen3-4B
+↓
+Stable Structured Annotation
+```
+
+---
+
+## Example Structured Output
 
 ```json
 {
-  "issue_type": "Delivery Delay",
+  "issue_type": "Refund Delay",
   "sentiment": "Negative",
   "urgency": "High",
   "resolution_status": "Unresolved",
-  "confidence": 0.91
+  "confidence": 0.94
 }
 ```
 
 ---
 
-# Technical Goals
+# Frontend Experience
 
-COG-6 aims to improve:
+COG-6 includes a cognitive visualization interface designed to expose the live reasoning state of the framework.
 
-* Long-context annotation stability
-* Context persistence
-* Reasoning robustness
-* Example organization
-* Structured annotation quality
-* Reproducibility
+The interface visualizes:
+
+* Cognitive memory hierarchy
+* Persistent contextual state
+* Memory density clusters
+* Real-time cognitive event extraction
+* Associative retrieval flow
+* Multi-stage reasoning progression
+
+This transforms abstract long-context reasoning into an interpretable cognitive workflow.
 
 ---
 
@@ -386,84 +460,58 @@ COG-6 aims to improve:
 /framework
     chunking.py
     saliency.py
-    memory.py
+    memory_runtime.py
     retrieval.py
     reasoning.py
     validation.py
 
+/frontend
+
 /prompts
+
 /evaluation
+
 /configs
+
 /main.py
+
 /method.py
 ```
 
 ---
 
-# Future Directions
+# Technical Goals
 
-Potential future extensions include:
+COG-6 aims to improve:
 
-* Adaptive memory compression
-* Graph-based contextual reasoning
-* Hierarchical retrieval strategies
-* Confidence-aware annotation
-* Cross-document reasoning
-
----
-
-# Official Competition Resources
-
-COG-6 is built for the FlagOS Open Computing Global Challenge — Track 3.
-
-## Dataset and Benchmark Access
-
-The official Track 3 dataset and benchmark pipeline are provided through the OpenSeek repository:
-
-* [OpenSeek Track 3 Repository](https://github.com/FlagAI-Open/OpenSeek/tree/main/openseek/competition/LongContext-ICL-Annotation)
-
-The repository includes:
-
-* Benchmark datasets
-* Baseline annotation pipeline
-* FlagScale integration setup
-* Evaluation workflow
-* Submission pipeline
+* Long-context persistence
+* Annotation robustness
+* Contextual stability
+* Memory-aware reasoning
+* Adaptive ICL orchestration
+* Multi-stage inference consistency
+* Production-grade reasoning workflows
 
 ---
 
-## Official Model Restriction
+# Ecosystem Contribution
 
-Track 3 submissions are restricted to the official competition model:
+COG-6 demonstrates how the FlagOS ecosystem can support:
 
-* [Qwen3-4B on Hugging Face](https://huggingface.co/Qwen/Qwen3-4B)
+* Persistent cognitive memory workloads
+* Long-context reasoning systems
+* Multi-stage inference orchestration
+* Adaptive ICL pipelines
+* Production-scale annotation frameworks
 
-No fine-tuning or external datasets are allowed under the competition rules.
-
----
-
-## Competition Workflow
-
-COG-6 integrates directly into the provided OpenSeek benchmark pipeline by replacing and extending the default annotation logic through cognitive-style orchestration modules.
-
-The framework runs entirely through:
-
-```text
-COG-6
-↓
-FlagScale Runtime
-↓
-Qwen3-4B
-↓
-FlagOS Infrastructure
-```
-
-This enables COG-6 to demonstrate advanced long-context reasoning workloads operating on the FlagOS ecosystem.
+The project showcases advanced cognitive-style AI orchestration operating entirely through the FlagScale and FlagOS infrastructure stack.
 
 ---
 
 # Conclusion
 
-COG-6 is a cognitive-inspired orchestration framework designed to improve long-context annotation through hierarchical memory construction, saliency-aware context organization, adaptive ICL retrieval, and multi-stage reasoning validation.
+COG-6 is a persistent cognitive memory runtime for long-context ICL reasoning designed to mitigate contextual degradation through structured memory orchestration.
 
-By running entirely on the FlagOS ecosystem, COG-6 demonstrates how advanced long-context reasoning systems can be efficiently orchestrated using FlagScale and Qwen3-4B.
+By combining cognitive memory persistence, adaptive retrieval, multi-stage reasoning, and reflective validation on top of the FlagOS ecosystem, COG-6 demonstrates how advanced long-context AI systems can maintain stable contextual understanding across ultra-large reasoning workflows.
+
+The framework transforms traditional flat prompting into persistent cognitive orchestration.
