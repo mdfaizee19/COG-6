@@ -6,6 +6,9 @@ COG-6 is a cognitive-inspired long-context In-Context Learning (ICL) framework d
 
 Built for the FlagOS Open Computing Global Challenge — Track 3, COG-6 focuses on improving annotation robustness, contextual persistence, and multi-stage reasoning for large-scale long-context work.
 
+<img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/9f619b7a-bf24-49b3-915d-062d4ea700e4" />
+
+
 ---
 
 # Core Idea
