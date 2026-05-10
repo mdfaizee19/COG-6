@@ -1,5 +1,5 @@
 # COG-6
-<img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/9f619b7a-bf24-49b3-915d-062d4ea700e4" />
+<img width="1774" height="887" alt="ChatGPT Image May 10, 2026, 01_02_02 AM" src="https://github.com/user-attachments/assets/83eed401-3a3d-446f-aeff-6594900fdf50" />
 
 ## Persistent Cognitive Memory Runtime for Long-Context ICL Reasoning
 
